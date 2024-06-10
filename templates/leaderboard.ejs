@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>leaderboard</title>
+</head>
+
+<style>
+	body {
+		font-size: 26px;
+		font-family: Georgia, serif;
+		background-color: forestgreen;
+		text-align: center;
+	}
+
+	form {
+        padding: 1rem;
+    }
+
+    h3 {
+        padding: .5rem
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        border: double .5rem maroon; 
+    }
+
+    th {
+        padding: .25rem;
+        border: solid .2rem black;
+        background-color: gold;
+    }
+
+    td {
+        padding: .25rem;
+        border: solid .2rem black;
+    }
+
+</style>
+
+<body>
+    <header>
+        <h1>Blackjack</h1>
+        <h2>Leaderboard</h2>
+    </header>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Balance</th>
+        </tr>
+        <%-top_ten%>
+    </table>
+</body>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>index</title>
+</head>
+
+<style>
+	body {
+		font-size: 26px;
+		font-family: Georgia, serif;
+		background-color: forestgreen;
+		text-align: center;
+	}
+
+	a {
+		color: black;
+	}
+
+	div {
+		border: double 1rem maroon; 
+		border-radius: 5%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+
+	form {
+		padding: 1.5rem;
+	}
+	
+	button {
+		width: 10rem;
+		height: 2rem;
+		background-color: gold;
+		border: outset .2rem black;
+		border-radius: 5%;
+		font: 1.2rem Georgia;
+	}
+</style>
+
+<body>
+	<header>
+		<h1>Blackjack</h1>
+	</header>
+	<div>
+		<form method="get" action="/login">
+			<button>Login</button>
+		</form>
+		<form method="get" action="/create_acct">
+			<button>Create Account</button>
+		</form>
+		<form method="get" action="/leaderboard">
+			<button>Leaderboard</button>
+		</form>
+	</div>
+</body>

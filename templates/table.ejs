@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>table</title>
+</head>
+
+<style>
+    body {
+		font-size: 26px;
+		font-family: Georgia, serif;
+		background-color: forestgreen;
+		text-align: center;
+	}
+
+    img {
+        border: double .5rem maroon; 
+		border-radius: 5%;
+    }
+
+    form {
+        display: inline;
+    }
+
+    input {
+		background-color: gold;
+		border: outset .2rem black;
+		border-radius: 5%;
+		font: 1.2rem Georgia;
+	}
+</style>
+
+<body>
+    <header>
+        <h1>Blackjack</h1>
+    </header>
+
+    <h4>Dealer</h4>
+    <div>
+        <%-dealer%>
+    </div>
+    <em>
+        <%-dealer_total%>
+    </em><br>
+
+    <strong>
+        <%-message%>
+    </strong><br>
+
+    <em>
+        <%-player_total%>
+    </em>
+    <div>
+        <%-player%><br>
+    </div>
+
+    <div>
+        Balance: <%-balance%>
+    </div>
+
+    <form method="post" action="/deal">
+        <input type="number" name="bet" min="1" value="1"><br>
+        <input type="submit" value="Deal">
+    </form>
+    <form method="post" action="/hit">
+        <input type="submit" value="Hit">
+    </form>
+    <form method="post" action="/stand">
+        <input type="submit" value="Stand">
+    </form>
+</body>

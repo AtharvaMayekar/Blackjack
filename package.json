@@ -1,0 +1,30 @@
+{
+  "name": "blackjack",
+  "version": "1.0.0",
+  "description": "blackjack",
+  "main": "blackjack.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Atharva Mayekar",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^6.0.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongobd": "^0.0.1-security.0",
+    "mongodb": "^6.6.2",
+    "node": "^20.13.1",
+    "nodemon": "^3.1.0",
+    "popup": "^0.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtharvaMayekar/Blackjack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AtharvaMayekar/Blackjack/issues"
+  },
+  "homepage": "https://github.com/AtharvaMayekar/Blackjack#readme"
+}
